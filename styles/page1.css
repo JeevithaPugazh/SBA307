@@ -1,0 +1,366 @@
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ecd1fc;
+}
+.container-fluid a {
+  color: #5a189a;
+}
+.active-color {
+  color: #ff0090 !important;
+}
+.navbar-brand img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 5px;
+}
+#logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CarouselSection */
+.bg-color1 {
+  background-color: #ecd1fc;
+  color: #5a189a;
+}
+.btn {
+  background-color: #ff0090;
+  border: none;
+  color: white;
+}
+.btn:hover {
+  background-color: #ce0f69;
+}
+
+#carouselExampleInterval {
+  width: 50%;
+  float: right;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-item img {
+  height: 15em;
+}
+.carousel-item {
+  height: 50%;
+  top: 30%;
+}
+.carousel-control-next {
+  display: flex;
+  justify-content: end;
+}
+
+.carousel-control-prev {
+  display: flex;
+  justify-content: start;
+}
+.carousel-control-prev-icon {
+  background-color: #5a189a;
+  border-radius: 5px;
+}
+.carousel-control-next-icon {
+  background-color: #5a189a;
+  border-radius: 5px;
+}
+#hero-container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  height: 60vh;
+}
+#hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 45%;
+  height: 100%;
+  margin-left: 40px;
+  flex-direction: column;
+}
+.hero-text {
+  font-family: "Fleur De Leah", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5em;
+  text-align: center;
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.jumbotron iframe {
+  border-radius: 10px;
+}
+.p-5 {
+  padding-bottom: 0 !important;
+}
+.mb-4 {
+  margin-bottom: 0 !important;
+}
+#values {
+  height: 30vh;
+  padding: 30px;
+  padding: 0px 10% 0px 10%;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.flex-column i {
+  color: #5a189a;
+  font-size: 4em;
+  margin-bottom: 30px;
+}
+.values-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+.value-card {
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+#carouselExample {
+  background-color: #ecd1fc;
+  margin-top: 50px;
+}
+/* new-arrival Section  */
+div .card {
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-right: 20px;
+  width: 300px;
+  height: 400px;
+}
+.card-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 20px 0px 40px;
+}
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
+  filter: none;
+}
+
+/* ShopByCollection-section */
+#shop-by-collection {
+  height: 50vh;
+  width: 100%;
+  margin-top: 5%;
+  padding: 0px 10% 0px 10%;
+}
+.shopByCollection-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 40vh;
+}
+
+/* customer-reviews */
+#customer-reviews {
+  height: 70vh;
+  width: 100%;
+  margin-top: 5%;
+  padding: 0px 10% 0px 10%;
+  background-color: #ecd1fc;
+}
+
+#awards {
+  height: 60vh;
+  width: 100%;
+  margin-top: 5%;
+  padding: 0px 10% 0px 10%;
+}
+.awards-img {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+  justify-content: space-between;
+}
+.awards-img img {
+  width: 30%;
+  border-radius: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 40vh;
+  margin-top: 5%;
+  padding: 2% 10% 0px 10%;
+  color: #5a189a;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer-socialMedia {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-between;
+}
+.footer-socialMedia i {
+  font-size: 30px;
+}
+
+/* new */
+
+.valueContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.valueContainer .card {
+  margin-bottom: 20px;
+  text-align: center;
+  align-content: center;
+  --bs-card-border-color: transparent; /* Hides border */
+  border: none;
+  color: #5a189a;
+}
+.valueContainer i {
+  font-size: 8em;
+  margin-bottom: 20px;
+}
+.valueContainer .card-body {
+  background-color: #ecd1fc;
+  border-color: none;
+  border: none;
+  color: #5a189a;
+}
+
+.valueContainer .card img {
+  height: 60%;
+}
+div .col {
+  display: flex;
+  justify-content: center;
+}
+.carousel-testimonial-container img {
+  width: 400px !important;
+  height: 400px !important;
+  border-radius: 50%;
+  margin: 20px 0px 20px 0px;
+}
+.carousel-testimonial-container {
+  float: none !important;
+}
+.testimonial-inner-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.full {
+  width: 100vw !important;
+  display: flex;
+  margin-left: 0;
+}
+.awards-cardBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.awards-cardBody img {
+  width: 300px;
+  height: 400px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1040px) {
+  .valueContainer {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .col5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+  .col-md-hide {
+    display: none;
+  }
+  .awardContainer {
+    width: 100% !important;
+    overflow-x: auto;
+  }
+
+  
+@media only screen and (max-width: 770px) {
+  .hero-text {
+    font-size: 3em;
+  }
+  .container-fluid.jumbotron {
+    flex-direction: column;
+    align-items: center;
+  }
+  div .col {
+    margin: auto;
+  }
+  .col-sm-hide {
+    display: none;
+  }
+  .carousel-testimonial-container {
+    flex-direction: column;
+  }
+  .carousel-testimonial-container img {
+    width: 40% !important;
+    height: 30% !important;
+    margin-bottom: 20px;
+  }
+
+  .footer-container {
+    display: flex
+;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-contact, .footer-socialMedia, .footer-notification{
+  margin-bottom: 20px;
+}
+}

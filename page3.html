@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Flower Stock Meter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f8f9fa;
+      }
+      .meter-container {
+        width: 300px;
+        text-align: center;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .meter-label {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      meter {
+        width: 100%;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="meter-container">
+      <label class="meter-label"
+        >🌹 Rose Stock Level:</label
+      >
+      <meter
+        value="35"
+        min="0"
+        max="100"
+        low="20"
+        high="75"
+        optimum="90"
+      >
+        35%
+      </meter>
+      <p>35% of roses available</p>
+    </div>
+
+    <blockquote>
+      "The most beautiful flowers I've ever received! 🌸"
+      <cite>– Emily R.</cite>
+    </blockquote>
+
+    <marquee
+      >🌸 Limited Edition Flowers Available Now! 🌸</marquee
+    >
+
+    <p><bdo dir="rtl">!snoomlB ruoY evoL</bdo></p>
+
+    <label>Order Status:</label>
+    <progress value="3" max="5"></progress>
+    <p>Processing your order...</p>
+
+    <aside>
+      <h3>🌿 Floral Care Tips</h3>
+      <p>Keep your flowers fresh with these simple tips!</p>
+    </aside>
+
+    <label for="quantity">Select Quantity:</label>
+    <input
+      type="number"
+      id="quantity"
+      value="1"
+      oninput="total.value=quantity.value*10"
+    />
+    <output name="total">10</output> USD
+
+    <input
+      list="flowers"
+      placeholder="Search for flowers..."
+    />
+    <datalist id="flowers">
+      <option value="10"></option>
+      <option value="20"></option>
+      <option value="30"></option>
+    </datalist>
+  </body>
 </html>

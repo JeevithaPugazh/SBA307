@@ -1,11 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Product page</title>
+    <link rel="stylesheet" href="./styles/page2.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><div id="logo">
+            <div><img src="./images/Logo1.png" /></div>
+            <div>
+              <div>Blossom</div>
+            </div>
+          </div></a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarScroll"
+        >
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active-color"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Link
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Action</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Another action</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Something else here</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                aria-disabled="true"
+                >Link</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container text-center">
+      <!-- togglebutton-sidebar -->
+      <div
+        class="toggle-sideBar"
+        style="margin-bottom: 10px"
+      >
+        <button
+          class="btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          <img src="./images/hamburger.png" />
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel"
+        >
+          <div class="offcanvas-body">
+            <div class="sidebar">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="float: right"
+              ></button>
+              <h2>Shop by Category</h2>
+              <ul class="menu">
+                <li><a href="#">🌹New Arrival</a></li>
+                <li>
+                  <form style="display: flex; padding: 0">
+                    <label
+                      for="flowers"
+                      style="margin-right: 10px"
+                    >
+                      🏵️Collections:</label
+                    >
+                    <select name="flowers" id="flowers">
+                      <optgroup label="Popular Flower">
+                        <option value="rose">
+                          <a href="#">Orchid</a>
+                        </option>
+                        <option value="lily">
+                          <a href="#">Tulip</a>
+                        </option>
+                      </optgroup>
+                      <optgroup label="Roses">
+                        <option value="Red Rose">
+                          <a href="#">Red Rose</a>
+                        </option>
+                        <option value="white rose">
+                          <a href="#">White Rose</a>
+                        </option>
+                        <option value="white rose">
+                          <a href="#">David Austin Roses</a>
+                        </option>
+                        <option value="saab">
+                          <a href="#">Floribunda Roses</a>
+                        </option>
+                        <option value="saab">
+                          <a href="#">Rainbow Rose</a>
+                        </option>
+                      </optgroup>
+                      <optgroup label="Exotic Flowers">
+                        <option value="Orchid">
+                          <a href="#">Orchid</a>
+                        </option>
+                        <option value="Tulip">
+                          <a href="#">Tulip</a>
+                        </option>
+                      </optgroup>
+                    </select>
+                  </form>
+                </li>
+                <li><a href="#">💐 Bouquets</a></li>
+                <li><a href="#">🌿 Seasonal Flowers</a></li>
+                <li><a href="#">🌺 Exotic Flowers</a></li>
+                <li><a href="#">🎁 Gift Sets</a></li>
+                <li><a href="#">✨ Best Sellers</a></li>
+                <li><a href="#">🛍️ Special Offers</a></li>
+              </ul>
+              <h2>Price</h2>
+              <form style="display: flex; padding: 0">
+                <label for="Min">Min:</label
+                ><select name="flower" id="min">
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="30">30</option>
+                </select>
+                <label for="Max">Max:</label
+                ><select name="flower" id="max">
+                  <option value="10">200</option>
+                  <option value="20">100</option>
+                  <option value="30">50</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- toggleButtonEnd -->
+      <div class="col-3">
+        <div class="row">
+          <div class="sidebar">
+            <h2>Shop by Category</h2>
+            <ul class="menu">
+              <li><a href="#">🌹New Arrival</a></li>
+              <li>
+                <form style="display: flex; padding: 0">
+                  <label
+                    for="flowers"
+                    style="margin-right: 10px"
+                  >
+                    🏵️Collections:</label
+                  >
+                  <select name="flowers" id="flowers">
+                    <optgroup label="Popular Flower">
+                      <option value="rose">
+                        <a href="#">Orchid</a>
+                      </option>
+                      <option value="lily">
+                        <a href="#">Tulip</a>
+                      </option>
+                    </optgroup>
+                    <optgroup label="Roses">
+                      <option value="Red Rose">
+                        <a href="#">Red Rose</a>
+                      </option>
+                      <option value="white rose">
+                        <a href="#">White Rose</a>
+                      </option>
+                      <option value="white rose">
+                        <a href="#">David Austin Roses</a>
+                      </option>
+                      <option value="saab">
+                        <a href="#">Floribunda Roses</a>
+                      </option>
+                      <option value="saab">
+                        <a href="#">Rainbow Rose</a>
+                      </option>
+                    </optgroup>
+                    <optgroup label="Exotic Flowers">
+                      <option value="Orchid">
+                        <a href="#">Orchid</a>
+                      </option>
+                      <option value="Tulip">
+                        <a href="#">Tulip</a>
+                      </option>
+                    </optgroup>
+                  </select>
+                </form>
+              </li>
+              <li><a href="#">💐 Bouquets</a></li>
+              <li><a href="#">🌿 Seasonal Flowers</a></li>
+              <li><a href="#">🌺 Exotic Flowers</a></li>
+              <li><a href="#">🎁 Gift Sets</a></li>
+              <li><a href="#">✨ Best Sellers</a></li>
+              <li><a href="#">🛍️ Special Offers</a></li>
+            </ul>
+            <h2>Price</h2>
+            <form style="display: flex; padding: 0">
+              <label for="Min">Min:</label
+              ><select name="flower" id="min">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+              </select>
+              <label for="Max">Max:</label
+              ><select name="flower" id="max">
+                <option value="10">200</option>
+                <option value="20">100</option>
+                <option value="30">50</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row section2">
+        <div class="col col-md-auto">
+          <div class="container text-center">
+            <div
+              class="row"
+              style="justify-content: space-around"
+            >
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="./images/flower1.jpg"
+                    class="card-img-top"
+                    alt="flower"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Sunset flower
+                    </h5>
+                    <p class="card-text">$59.95</p>
+                    <a href="#" class="btn">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="./images/flower1.jpg"
+                    class="card-img-top"
+                    alt="flower"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Sunset flower
+                    </h5>
+                    <p class="card-text">$59.95</p>
+                    <a href="#" class="btn">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="./images/flower1.jpg"
+                    class="card-img-top"
+                    alt="flower"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Sunset flower
+                    </h5>
+                    <p class="card-text">$59.95</p>
+                    <a href="#" class="btn">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="./images/flower1.jpg"
+                    class="card-img-top"
+                    alt="flower"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Sunset flower
+                    </h5>
+                    <p class="card-text">$59.95</p>
+                    <a href="#" class="btn">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="./images/flower1.jpg"
+                    class="card-img-top"
+                    alt="flower"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Sunset flower
+                    </h5>
+                    <p class="card-text">$59.95</p>
+                    <a href="#" class="btn">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="./images/flower1.jpg"
+                    class="card-img-top"
+                    alt="flower"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Sunset flower
+                    </h5>
+                    <p class="card-text">$59.95</p>
+                    <a href="#" class="btn">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="./images/flower1.jpg"
+                    class="card-img-top"
+                    alt="flower"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Sunset flower
+                    </h5>
+                    <p class="card-text">$59.95</p>
+                    <a href="#" class="btn">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img
+                    src="./images/flower1.jpg"
+                    class="card-img-top"
+                    alt="flower"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Sunset flower
+                    </h5>
+                    <p class="card-text">$59.95</p>
+                    <a href="#" class="btn">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

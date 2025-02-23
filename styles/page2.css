@@ -1,0 +1,176 @@
+.navbar {
+  background-color: #ecd1fc;
+}
+.container-fluid a {
+  color: #5a189a;
+}
+.active-color {
+  color: #ff0090 !important;
+}
+.navbar-brand img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 5px;
+}
+#logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a.btn,
+button.btn {
+  background-color: #ff0090;
+  border: none;
+  color: white;
+}
+a.btn:hover,
+button.btn:hover {
+  background-color: #ce0f69;
+  color: white;
+}
+.card {
+  height: 23rem;
+  width: 16rem;
+}
+.card img {
+  width: 100%;
+  height: 15em;
+  object-fit: cover;
+}
+.col {
+  margin: 20px;
+}
+.container {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .col-3 {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.toggle-sideBar {
+  display: none;
+}
+.sidebar {
+  width: 250px;
+  background: #ecd1fc;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  text-align: start;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  padding: 10px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  transition: 0.3s;
+}
+.menu li a:hover {
+  color: #ff6b81;
+}
+
+div.row.section2 {
+  padding-left: 30px;
+  margin-right: 20px;
+}
+.col-md-auto {
+  background-color: #ecd1fc;
+  border-radius: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+div.col {
+  flex-grow: 0 !important;
+  margin: 0px 0px 20px 0px;
+  padding: 5px;
+}
+#min,
+#max {
+  width: 30%;
+  margin-right: 10px;
+}
+div.row.section2 {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    display: flex;
+  }
+  div .card {
+    justify-content: space-around;
+  }
+  @media only screen and (max-width: 1300px) {
+    .sidebar form {
+      flex-direction: column;
+    }
+
+    #min,
+    #max {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .text-center .row {
+      justify-content: space-around;
+    }
+  }
+  @media only screen and (max-width: 770px) {
+    .container {
+      flex-direction: column;
+    }
+    .toggle-sideBar {
+      display: flex;
+    }
+    .col-3 .row .sidebar {
+      display: none;
+    }
+    .container .col-3 {
+      height: 0px;
+    }
+    .row .section2 {
+      position: relative;
+    }
+    .toggle-sideBar img {
+      width: 30px;
+      height: 30px;
+    }
+    .toggle-sideBar .btn {
+      background-color: #ecd1fc;
+    }
+
+    div #offcanvasWithBothOptions {
+      margin-top: 80px;
+      border-radius: 10px;
+      width: 80%;
+    }
+    div .offcanvas-body {
+      overflow-y: unset;
+    }
+    .sidebar {
+      width: 100%;
+    }
+  }
+}
