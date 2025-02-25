@@ -1,1 +1,2 @@
 ![Getting satarted](./images/Blossom%20Website.png)
+Developed a fully responsive and visually appealing online floral store using HTML and CSS, featuring seamless navigation, secure checkout, interactive UI, category filters, and a smooth shopping experience, ensuring fast delivery and a mobile-friendly design.🌸💻
