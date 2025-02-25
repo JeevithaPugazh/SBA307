@@ -282,10 +282,51 @@ div .card {
   width: 30%;
   border-radius: 10px;
 }
+/* Gif-table */
+.gif-table {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+}
+.gif-table-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gif-table img {
+  border-radius: 10px;
+  margin-right: 10px;
+}
+table {
+  width: 40vw;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
 
 footer {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   margin-top: 5%;
   padding: 2% 10% 0px 10%;
   color: #5a189a;
@@ -294,10 +335,14 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-.footer {
+
+footer {
   display: flex;
-  flex-direction: column;
+
+  align-items: center;
 }
 .footer-socialMedia {
   display: flex;
@@ -406,6 +451,10 @@ div .col {
     flex-direction: column;
     align-items: center;
   }
+  .container-fluid.jumbotron {
+    flex-direction: column;
+    align-items: center;
+  }
   div .col {
     margin: auto;
   }
@@ -420,7 +469,20 @@ div .col {
     height: 30% !important;
     margin-bottom: 20px;
   }
+  .gif-table {
+    height: 90vh;
 
+    align-items: center;
+  }
+  .gif-table-content {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .gif-table img {
+    width: 30vw;
+    height: 30vh;
+  }
   .footer-container {
     display: flex;
     flex-direction: column;
