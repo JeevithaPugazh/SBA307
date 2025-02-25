@@ -25,11 +25,70 @@ h2 {
   height: 3rem;
   margin-right: 5px;
 }
+/* userCart */
+.user-cart sup {
+  padding: 5px;
+  background-color: #5a189a;
+  color: white;
+  border-radius: 50%;
+}
+.user-cart {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 15rem;
+}
+.user-cart i {
+  font-size: 30px;
+  color: #5a189a;
+}
+.user-cart i sup {
+  font-size: 20px;
+}
+/* .user-cart end */
 #logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  background: #5a189a;
+  color: white;
+  padding: 10px 0;
+  font-size: 20px;
+  animation: scrollText 10s linear infinite;
+}
+
+.flower {
+  font-size: 80px;
+  position: relative;
+  margin-bottom: 20px;
+  animation: bounce 2s ease-in-out infinite,
+    rotate 4s linear infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* CarouselSection */
@@ -141,6 +200,7 @@ h2 {
   margin: auto;
   width: 80%;
 }
+
 .value-card {
   padding: 5px;
   width: 200px;
@@ -157,7 +217,7 @@ div .card {
   align-items: center;
   text-align: center;
   margin-right: 20px;
-  width: 300px;
+  width: 250px;
   height: 400px;
 }
 .card-container {
@@ -191,6 +251,9 @@ div .card {
   justify-content: space-between;
   overflow: hidden;
   height: 40vh;
+}
+.shop-by-collection-card .card-body {
+  border-radius: 0px 0px 10px 10px;
 }
 
 /* customer-reviews */
@@ -329,9 +392,13 @@ div .col {
     width: 100% !important;
     overflow-x: auto;
   }
+}
 
-  
 @media only screen and (max-width: 770px) {
+  .container-fluid {
+    width: 80%;
+    margin-left: 20px;
+  }
   .hero-text {
     font-size: 3em;
   }
@@ -355,12 +422,19 @@ div .col {
   }
 
   .footer-container {
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.footer-contact, .footer-socialMedia, .footer-notification{
-  margin-bottom: 20px;
-}
+  }
+  .footer-contact,
+  .footer-socialMedia,
+  .footer-notification {
+    margin-bottom: 20px;
+  }
+  .valueContainer .card {
+    height: 300px !important;
+  }
+  .shop-by-collection-card {
+    height: 70rem !important;
+  }
 }

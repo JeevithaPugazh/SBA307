@@ -18,6 +18,26 @@
   justify-content: center;
   align-items: center;
 }
+.user-cart sup {
+  padding: 5px;
+  background-color: #5a189a;
+  color: white;
+  border-radius: 50%;
+}
+.user-cart {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 15rem;
+}
+.user-cart i {
+  font-size: 30px;
+  color: #5a189a;
+}
+.user-cart i sup {
+  font-size: 20px;
+}
 
 a.btn,
 button.btn {

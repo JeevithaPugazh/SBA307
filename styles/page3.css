@@ -1,0 +1,210 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.navbar {
+  background-color: #ecd1fc;
+}
+.container-fluid a {
+  color: #5a189a;
+}
+.active-color {
+  color: #ff0090 !important;
+}
+.navbar-brand img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 5px;
+}
+#logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.user-cart sup {
+    padding: 5px;
+    background-color: #5a189a;
+    color: white;
+    border-radius: 50%;
+  }
+  .user-cart {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 15rem;
+  }
+  .user-cart i {
+    font-size: 30px;
+    color: #5a189a;
+  }
+  .user-cart i sup {
+    font-size: 20px;
+  }
+
+a.btn,
+button.btn {
+  background-color: #ff0090;
+  border: none;
+  color: white;
+}
+a.btn:hover,
+button.btn:hover {
+  background-color: #ce0f69;
+  color: white;
+}
+
+/* MainContainer */
+#main-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.heading {
+  background-color: #ecd1fc;
+  color: #5a189a;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.billing-form .mb-3 {
+  width: 16em;
+}
+.billingDetails,
+.yourOrder {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+.billingDetails {
+  padding-right: 30px;
+  border-right: 1px solid #5a189a;
+}
+.yourOrder {
+  margin-left: 30px;
+}
+.product-subtotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product-items {
+  margin-top: 30px;
+}
+.billing-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.form-submit {
+  display: flex;
+  justify-content: center;
+}
+.product-card-img {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px !important;
+}
+.product-card-img img {
+  border-radius: 10px !important;
+}
+.credit-card-radio-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+  padding: 10px;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.form-credit-card {
+  margin-top: 20px;
+  border: 1px solid;
+  padding: 30px;
+}
+.expiration-csc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product-card {
+  max-width: 400px;
+}
+.card-body h2 {
+  display: none;
+}
+@media only screen and (max-width: 1040px) {
+  .billing-form div .mb-3 {
+    width: 15em;
+  }
+  .billing-form {
+    flex-direction: column;
+  }
+  .product-card {
+    max-width: 300px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .product-card {
+    max-width: 280px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #main-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .billingDetails,
+  .yourOrder {
+    border-right: none;
+    width: 70vw;
+  }
+  .your-cart-heading {
+    margin-top: 30px;
+  }
+  .product-card {
+    max-width: 300px !important;
+    height: fit-content;
+  }
+  .product-card-img {
+    width: 70px !important;
+  }
+  .row {
+    flex-wrap: nowrap !important;
+  }
+  .card-body {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .row {
+    flex-wrap: wrap !important;
+    justify-content: center;
+  }
+  .product-card {
+    max-width: 200px !important;
+    display: flex !important;
+  }
+  .card-body h6 {
+    display: block;
+  }
+  .card-body h6 {
+    display: none;
+  }
+  .card-body {
+    width: 190px;
+  }
+  .expiration-csc {
+    flex-direction: column;
+  }
+}
